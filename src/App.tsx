@@ -10,6 +10,8 @@ import Home from "@/src/pages/Home";
 import About from "@/src/pages/About";
 import Work from "@/src/pages/Work";
 import Services from "@/src/pages/Services";
+import  GetInTouchForm from "./pages/Getintouchform";
+
 
 export default function App() {
   return (
@@ -22,6 +24,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/work" element={<Work />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/get-in-touch" element={<GetInTouchForm />} />
           </Routes>
         </main>
         <Footer />

@@ -60,8 +60,8 @@ export const Navbar = () => {
           <Link to="/work" className="hover:text-foreground transition-colors">Work</Link>
           <Link to="/about" className="hover:text-foreground transition-colors">About</Link>
           <Button variant="outline" className="rounded-full px-6" asChild>
-            <Link to="/#contact">Get in Touch</Link>
-          </Button>
+            <Link to="/get-in-touch">Get in Touch</Link>
+                    </Button>
         </div>
       </div>
     </nav>
