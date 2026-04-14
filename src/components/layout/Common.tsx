@@ -2,12 +2,13 @@ import { motion } from "motion/react";
 import React from "react";
 import { 
   Github, 
-  Twitter, 
   Linkedin, 
+  Instagram,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
+
 
 interface FadeInProps {
   children: React.ReactNode;
@@ -86,13 +87,20 @@ export const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors">
-                <Twitter className="w-4 h-4" />
+                <img
+                  src="/site-assets/twitterX.png"
+                  alt="Logo"
+                  className="h-4 w-auto"
+                />
               </a>
               <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors">
                 <Github className="w-4 h-4" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors">
                 <Linkedin className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors">
+                <Instagram className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -121,7 +129,7 @@ export const Footer = () => {
         <Separator className="bg-white/10 mb-8" />
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground uppercase tracking-widest font-medium">
-          <p>© 2024 Ren Aiko. All rights reserved.</p>
+          <p>© 2026 Ren Aiko. All rights reserved.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
