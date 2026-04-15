@@ -40,12 +40,22 @@ const ContactForm = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    console.log("Form Data:", form);
-
-    // TODO: integrate API / email service
+    console.log("FORM SUBMITTED"); 
+  
+  
+      const res = await fetch("https://script.google.com/macros/s/AKfycbzD0sUw-9QxidAfIszNlIH_H7ix8J9ehWjRZ6iK5psBecHxfwoOiCcZHd1ikJ9bFNJ1vA/exec", {
+        method: "POST",
+        mode: "no-cors", 
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+  
+      alert("Message saved!");
+        setForm({ name: "", email: "", phone: "", message: "" });
   };
 
   return (
@@ -110,7 +120,7 @@ const ContactForm = () => {
                   />
                 </div>
 
-                <Button size="lg" className="w-full h-14 text-lg group">
+                <Button type="submit" size="lg" className="w-full h-14 text-lg group">
                   Send Message
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
