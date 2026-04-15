@@ -45,7 +45,7 @@ const ContactForm = () => {
     console.log("FORM SUBMITTED"); 
   
   
-      const res = await fetch("https://script.google.com/macros/s/AKfycbzD0sUw-9QxidAfIszNlIH_H7ix8J9ehWjRZ6iK5psBecHxfwoOiCcZHd1ikJ9bFNJ1vA/exec", {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbwNFnU3fm4H-8b4oJ8zO2u3j_u3Riyvou8_N2QYCgUZYZRHjiMHL0vxB9nzZGPOlX5DNA/exec", {
         method: "POST",
         mode: "no-cors", 
         headers: {
