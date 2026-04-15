@@ -58,11 +58,11 @@ export const Navbar = () => {
         
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
           <Link to="/services" className="hover:text-foreground transition-colors">Services</Link>
-          <Link to="/work" className="hover:text-foreground transition-colors">Work</Link>
+          {/*<Link to="/work" className="hover:text-foreground transition-colors">Work</Link>*/}
           <Link to="/about" className="hover:text-foreground transition-colors">About</Link>
           <Button variant="outline" className="rounded-full px-6" asChild>
-            <Link to="/#contact">Get in Touch</Link>
-          </Button>
+            <Link to="/get-in-touch">Get in Touch</Link>
+                    </Button>
         </div>
       </div>
     </nav>
@@ -119,7 +119,7 @@ export const Footer = () => {
             <h4 className="font-bold mb-6 uppercase text-xs tracking-widest">Agency</h4>
             <ul className="space-y-4 text-sm text-muted-foreground">
               <li><Link to="/about" className="hover:text-foreground transition-colors">About Us</Link></li>
-              <li><Link to="/work" className="hover:text-foreground transition-colors">Our Work</Link></li>
+              {/*<li><Link to="/work" className="hover:text-foreground transition-colors">Our Work</Link></li>*/}
               <li><Link to="/#services" className="hover:text-foreground transition-colors">Process</Link></li>
               <li><Link to="/#contact" className="hover:text-foreground transition-colors">Contact</Link></li>
             </ul>
@@ -130,10 +130,6 @@ export const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground uppercase tracking-widest font-medium">
           <p>© 2026 Ren Aiko. All rights reserved.</p>
-          <div className="flex gap-8">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
-          </div>
         </div>
       </div>
     </footer>
