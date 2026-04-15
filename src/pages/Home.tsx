@@ -63,7 +63,7 @@ const Hero = () => {
               </a>
             </Button>
             <Button size="lg" variant="ghost" className="rounded-full px-8 h-14 text-base" asChild>
-              <a href="#work">View Our Work</a>
+              <a href="#services">Services We Offer</a>
             </Button>
           </div>
         </FadeIn>
@@ -155,6 +155,7 @@ const Services = () => {
   );
 };
 
+/* ❌ COMMENTED OUT WORK SECTION
 const Work = () => {
   const projects = [
     { title: "Lumina AI", category: "Automation Platform", image: "https://picsum.photos/seed/tech1/800/600" },
@@ -219,6 +220,9 @@ const Work = () => {
   );
 };
 
+*/
+
+
 const CTA = () => {
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
@@ -265,7 +269,7 @@ export default function Home() {
     <>
       <Hero />
       <Services />
-      <Work />
+      {/* <Work />*/}
       <CTA />
     </>
   );
